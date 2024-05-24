@@ -1,0 +1,168 @@
+
+    <!doctype html>
+    <html>
+    <head>
+    <title>ORECCHIETTE</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+    <style>
+
+   @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,500&display=swap');
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: yellow;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 span {
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 2em;
+        font-style: italic;
+        text-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .letter-groups {display: table-cell; padding: 15px 15px;}
+
+    h1:hover div {
+        animation: bounce .5s infinite;
+        cursor: pointer;
+    }
+
+    @keyframes bounce {
+        0%{
+            transform: translateY(0px);
+        }
+         50%{
+            transform: translateY(-30px);
+        }
+         100%{
+            transform: translateY(0px);
+        }
+    }
+
+    h1 div:nth-child(1){
+        animation-delay: .1s;
+    }
+
+    h1 div:nth-child(2){
+        animation-delay: .3s;
+    }
+
+    h1 div:nth-child(3){
+        animation-delay: .5s;
+    }
+
+    h1 div:nth-child(4){
+        animation-delay: .7s;
+    }
+
+    h1 div:nth-child(5){
+        animation-delay: .9s;
+    }
+
+    h1 div:nth-child(6){
+        animation-delay: .11s;
+    }
+
+    h1 div:nth-child(7){
+        animation-delay: .13s;
+    }
+
+    h1 div:nth-child(8){
+        animation-delay: .15s;
+    }
+
+    h1 div:nth-child(9){
+        animation-delay: .17s;
+    }
+
+    h1 div:nth-child(10){
+        animation-delay: .19s;
+    }
+
+    h1 div:nth-child(11){
+        animation-delay: .21s;
+    }
+
+
+    .libre-franklin-pasta {
+      font-family: "Libre Franklin", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+    }
+
+    a, a:visited {text-decoration: none; color: #000;}
+        
+    </style>
+
+    </head>
+
+    <body>
+        <h1>
+            <div class="letter-groups" id="uno">
+                <a href="#"><img src="http://beinecke-digital-exhibits.name/walter-o-evans/files/orecchiette/earglyph.png" width="100" height="100"><span class="libre-franklin">R</span></a>
+                <audio id="or" preload="auto"><source src="http://beinecke-digital-exhibits.name/walter-o-evans/files/orecchiette/or.mp3"></audio>
+            </div>
+            <div class="letter-groups" id="due">
+                <a href="#"><span class="libre-franklin">E</span></a>
+                <audio id="eh" preload="auto"><source src="http://beinecke-digital-exhibits.name/walter-o-evans/files/orecchiette/eh-1.mp3"></audio>
+            </div>
+            <div class="letter-groups" id="tre">
+                <a href="#"><span class="libre-franklin">CCHI</span></a>
+                <audio id="chi" preload="auto"><source src="http://beinecke-digital-exhibits.name/walter-o-evans/files/orecchiette/chi.mp3"></audio>
+            </div>
+            <div class="letter-groups" id="quattro">    
+                <a href="#"><span class="libre-franklin">E</span></a>
+                <audio id="blah" preload="auto"><source src="http://beinecke-digital-exhibits.name/walter-o-evans/files/orecchiette/eh-2.mp3"></audio>
+            </div>
+            <div class="letter-groups" id="cinque">    
+                <a href="#"><span class="libre-franklin">TTE</span></a>
+                <audio id="te" preload="auto"><source src="http://beinecke-digital-exhibits.name/walter-o-evans/files/orecchiette/te.mp3"></audio>
+           </div>     
+        </h1>
+    </body>
+    <script>
+        var orOne= $("#or")[0];
+        $(".letter-groups#uno")
+        .mouseenter(function() {
+            orOne.play();
+        });
+
+        var ehOne= $("#eh")[0];
+        $(".letter-groups#due")
+        .mouseenter(function() {
+            ehOne.play();
+        });
+
+         var chiOne= $("#chi")[0];
+        $(".letter-groups#tre")
+        .mouseenter(function() {
+            chiOne.play();
+        });
+
+         var blahOne= $("#blah")[0];
+        $(".letter-groups#quattro")
+        .mouseenter(function() {
+            blahOne.play();
+        });
+
+         var teOne= $("#te")[0];
+        $(".letter-groups#cinque")
+        .mouseenter(function() {
+            teOne.play();
+        });
+
+
+    </script>
+    </html>
